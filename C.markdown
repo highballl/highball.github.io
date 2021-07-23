@@ -1,10 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: post
+layout: page
 title: C
+permalink: /c/
 tags: C
 ---
 
-What I learned for C
+### What I learned for C
+
