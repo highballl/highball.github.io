@@ -29,8 +29,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username: highballl
 
-# Build settings
-theme: just-the-docs
+# Remote Setting
+# baseurl: "/guidelines"
+# url: ""
+
+# Theme
+# theme: "just-the-docs"
+remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
 
