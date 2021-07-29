@@ -70,16 +70,20 @@ subtitle: "ver 0.1"  # 타이틀 하단 소제목
 name: "Dev JYP"
 repository: "https://github.com/highballl/highballl.github.io" # Github Repo url입니다.
 teaser: # 폴백일 때 보일 이미지입니다. "assets/images/"로 연결됩니다.
-logo : # 화면에 보여지는 logo 이미지입니다. "assets/images"로 세팅합니다.
+logo : "assets/images" # 화면에 보여지는 logo 이미지입니다. "assets/images"로 세팅합니다.
 masthead_title: "Highball the Oasis"     # 화면 title 입니다.
 
 
 
 
 # Build settings
-theme: minima
+# theme: minima
+# remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-data
 
 
 # Site Author
