@@ -1,14 +1,3 @@
-# # main links
-# main:
-#   #- title: "Home"
-#   #  url: "/"
-#   - title: "Introduce"
-#     url: /about/
-#   - title: "Category"
-#     url: "/categories/"
-#   - title: "Tags"
-#     url: /tags/
-
 # main links
 main:
   - title: "Quick-Start Guide"
