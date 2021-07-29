@@ -14,7 +14,7 @@ twitter_username:
 github_username: highballl
 email : ""
 
-google-analytics: "G-CB2JV2RV5D"
+google-analytics: [G-CB2JV2RV5D]
 google_analytics_anonymize_ip: "false"
 
 # Theme
