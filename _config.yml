@@ -83,49 +83,49 @@ plugins:
 
 
 # Site Author
-author:
-  name: "Dev JYP"
-  avatar: # 프로필 사진 경로
-  bio: "**하다보면**" # 줄바꿈은 <br>, 굵은 글씨는 **글씨** 로 표기
-  location: "Republic of Korea"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:jyp0293@email.com
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/highballl"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/applemintmojito"
-    - label: "Instagram"                            # 표시되는 이름입니다.
-      icon: "fab fa-fw fa-instagram"                # fab fa-fw fa-{SNS NAME} 으로 해주세요.
-      url: "https://www.instagram.com/applemintmojito/"  # 개인 SNS 계정 링크를 기재하면 됩니다.
+# author:
+#   name: "Dev JYP"
+#   avatar: # 프로필 사진 경로
+#   bio: "**하다보면**" # 줄바꿈은 <br>, 굵은 글씨는 **글씨** 로 표기
+#   location: "Republic of Korea"
+#   links:
+#     - label: "Email"
+#       icon: "fas fa-fw fa-envelope-square"
+#       url: mailto:jyp0293@email.com
+#     - label: "GitHub"
+#       icon: "fab fa-fw fa-github"
+#       url: "https://github.com/highballl"
+#     - label: "Facebook"
+#       icon: "fab fa-fw fa-facebook-square"
+#       url: "https://www.facebook.com/applemintmojito"
+#     - label: "Instagram"                            # 표시되는 이름입니다.
+#       icon: "fab fa-fw fa-instagram"                # fab fa-fw fa-{SNS NAME} 으로 해주세요.
+#       url: "https://www.instagram.com/applemintmojito/"  # 개인 SNS 계정 링크를 기재하면 됩니다.
 
 
-footer:
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:jyp0293@email.com
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:                                        # 이런식으로 url을 주석처리하면 노출되지 않습니다.
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/applemintmojito"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/highballl"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/applemintmojito/"
+# footer:
+#   links:
+#     - label: "Email"
+#       icon: "fas fa-fw fa-envelope-square"
+#       url: mailto:jyp0293@email.com
+#     - label: "Twitter"
+#       icon: "fab fa-fw fa-twitter-square"
+#       # url:                                        # 이런식으로 url을 주석처리하면 노출되지 않습니다.
+#     - label: "Facebook"
+#       icon: "fab fa-fw fa-facebook-square"
+#       url: "https://www.facebook.com/applemintmojito"
+#     - label: "GitHub"
+#       icon: "fab fa-fw fa-github"
+#       url: "https://github.com/highballl"
+#     - label: "GitLab"
+#       icon: "fab fa-fw fa-gitlab"
+#       # url:
+#     - label: "Bitbucket"
+#       icon: "fab fa-fw fa-bitbucket"
+#       # url:
+#     - label: "Instagram"
+#       icon: "fab fa-fw fa-instagram"
+#       url: "https://www.instagram.com/applemintmojito/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
