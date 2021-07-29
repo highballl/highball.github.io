@@ -12,6 +12,41 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
+
+
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5                                    # Defaults : 5
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+  
+  # _pages                      : 해당 하단 영역이 새로 추가되었습니다.
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+
+
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -24,15 +59,73 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog # 폴백(예기치 못한 오류)일 때 연결되는 url입니다.
 url: "https://highballl.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
 github_username: ""
+
+locale : "ko-KR"
+title_separator : "-" 
+subtitle: "ver 0.1"  # 타이틀 하단 소제목
+name: "Dev JYP"
+repository: "https://github.com/highballl/highballl.github.io" # Github Repo url입니다.
+teaser: # 폴백일 때 보일 이미지입니다. "assets/images/"로 연결됩니다.
+logo : # 화면에 보여지는 logo 이미지입니다. "assets/images"로 세팅합니다.
+masthead_title: "Highball the Oasis"     # 화면 title 입니다.
+
+
+
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+
+# Site Author
+author:
+  name: "Dev JYP"
+  avatar: # 프로필 사진 경로
+  bio: "**하다보면**" # 줄바꿈은 <br>, 굵은 글씨는 **글씨** 로 표기
+  location: "Republic of Korea"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:jyp0293@email.com
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/highballl"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/applemintmojito"
+    - label: "Instagram"                            # 표시되는 이름입니다.
+      icon: "fab fa-fw fa-instagram"                # fab fa-fw fa-{SNS NAME} 으로 해주세요.
+      url: "https://www.instagram.com/applemintmojito/"  # 개인 SNS 계정 링크를 기재하면 됩니다.
+
+
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:jyp0293@email.com
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:                                        # 이런식으로 url을 주석처리하면 노출되지 않습니다.
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/applemintmojito"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/highballl"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/applemintmojito/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
