@@ -16,10 +16,10 @@ toc: true
 - 페이스북에서 개발, 자바스크립트 라이브러리
 - 동적 유저 인터페이스(UI)를 구축할 때 용이
 - 현재 가장 사용자 점유율이 높음(2021년 기준)
-- `**Virtual DOM**`
-- `**JSX`(JavaScript eXtension, 자바스크립트 확장 문법)**를 이용
-- `**컴포넌트(Component)**`를 이용하여 코드를 모듈화
-- `**Hooks**`를 이용하여 컴포넌트를 쉽게 관리
+- **`Virtual DOM`**
+- **`JSX`(JavaScript eXtension, 자바스크립트 확장 문법)**를 이용
+- **`컴포넌트(Component)`**를 이용하여 코드를 모듈화
+- **`Hooks`**를 이용하여 컴포넌트를 쉽게 관리
 - 오픈소스
 - 데이터는 부모→자식 단방향으로만 전달(props 이용)
 
@@ -43,6 +43,7 @@ toc: true
     : `DOM(Document Object Model)`(문서 객체 모델) - HTML 요소를 노드로 포함하는 트리 구조
 - `<React.StrictMode> </React.StrictMode>`
     : 리액트 앱이 로딩되는 부분
+
     ```jsx
     import React from 'react';
     import ReactDOM from 'react-dom';
@@ -84,6 +85,7 @@ React-Native 앱을 개발하는 동안 코드 변경 사항을보고 코드 변
 # JSX
 - **`React.createElement()`**
     - 코드틀
+
     ```javascript
     const element = React.createElement(
       'div', // Tag name
@@ -93,6 +95,7 @@ React-Native 앱을 개발하는 동안 코드 변경 사항을보고 코드 변
     // 위 아래는 같은 코드
     const element = <div className="show">hi!</div>
     ```
+    
     - JSX 문법을 이용하지 않고 element를 객체로 표현할 수 있음
     - HTML element를 생성하여 객체로 반환
     - 엘리먼트는 한번 생성하고 나면 수정이 불가능한 객체(const element...)
@@ -1007,7 +1010,7 @@ function addItem() {
     - Module not found: Can't resolve '파일경로'
         -  파일이 누락되었거나 파일 경로에 오타가 있을 경우 발생(점, 슬래시 등 체크)
     - 컴포넌트의 입력인자에 숫자를 할당하려면?
-    
+
         ```jsx
         <Profile name="AnSan" age="20" /> (o)
         <Profile name="AnSan" age={20} /> (o)
