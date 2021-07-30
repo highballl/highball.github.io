@@ -3,13 +3,14 @@ title: "React"
 layout: "Page"
 permalink: /:cagetories/:title/
 categories:
-  - Frontend
+  - frontend
 tags:
   - React
   - JavaScript
   - JSX
   - Frontend
 #date: 2021-07-31T00:00:00
+toc: true
 ---
 # 리액트란?
 - 페이스북에서 개발, 자바스크립트 라이브러리
