@@ -10,5 +10,7 @@ main:
      url: /categories/
    - title: "Tag"
      url: /tags/
+   - title: "Portfolio"
+     url: /Portfolio/
   # - title: "Sitemap"
   #   url: /sitemap/

@@ -287,9 +287,23 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
-      share: true
+      comments: true
+      share: false
       related: true
+      sidebar:
+        nav: "posts"
+  - scope:
+      path:
+      type: docs
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share : false
+      related: true
+      sidebar: 
+        nav: "docs"
 
 
 
@@ -298,3 +312,4 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+    sortby: 

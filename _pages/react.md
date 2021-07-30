@@ -1,5 +1,7 @@
 ---
 title: "React"
+layout: "Page"
+permalink: /:cagetories/:title/
 categories:
   - Frontend
 tags:
@@ -7,6 +9,7 @@ tags:
   - JavaScript
   - JSX
   - Frontend
+#date: 2021-07-31T00:00:00
 ---
 
 - 각종 에러 메시지와 해결방법
@@ -28,9 +31,9 @@ tags:
         -  파일이 누락되었거나 파일 경로에 오타가 있을 경우 발생(점, 슬래시 등 체크)
     - 컴포넌트의 입력인자에 숫자를 할당하려면?
         ```jsx
-        **<Profile name="AnSan" age="20" /> (o)
+        <Profile name="AnSan" age="20" /> (o)
         <Profile name="AnSan" age={20} /> (o)
-        <Profile name="AnSan" age=25 /> (x)**
+        <Profile name="AnSan" age=25 /> (x)
         ```
 
 # 리액트란?
@@ -73,7 +76,7 @@ tags:
         <React.StrictMode>
             <App />
         <React.StrictMode>
-        **document.getElementById('root')**
+        document.getElementById('root')
     );
     ```
 
@@ -210,11 +213,11 @@ React-Native 앱을 개발하는 동안 코드 변경 사항을보고 코드 변
     function App() {
       return (
         <div className="App">
-            **<div style={{
+            <div style={{
                 padding: 48, 
                 color:"red",
                 backgroundColor:"blue", 
-            }}>**안녕하세요.</div>
+            }}>안녕하세요.</div>
         </div>
       );
     }
@@ -339,7 +342,7 @@ function NavTag(){
   )
 }
 
-f**unction ArticleTag(props){
+function ArticleTag(props){
   console.log('props', props.title);
   return (  
   <article>
@@ -347,15 +350,15 @@ f**unction ArticleTag(props){
         {props.description}
     </article>
   )
-}**
+}
 
 function App() {
   return (
     <div className="App">
       <HeaderTag />
       <NavTag />
-      **<ArticleTag title="Welcome" description="Hello, WEB"/>
-      <ArticleTag title="Hi" description="Hello, React"/>**
+      <ArticleTag title="Welcome" description="Hello, WEB"/>
+      <ArticleTag title="Hi" description="Hello, React"/>
     </div>
   );
 }
@@ -416,9 +419,9 @@ function Welcome({name,age}){ // object destructuring assignment
     // return 내부가 JSX 반환하는 것이라고 코드가 이해해야 해서 필요
 
     function Header(){
-    	**return (
+    	return (
     		<div> Hello </div>; // JSX 반환 부분
-    	)**
+    	)
     }
     ```
 
@@ -466,13 +469,13 @@ function Welcome({name,age}){ // object destructuring assignment
     /* ver2 - Welcome.js를 임포트 할 App.js */
     import React from 'react';
     import './App.css';
-    **import welcome from './components/Welcome';
-    // Welcome을 임포트해서 사용하기**
+    import welcome from './components/Welcome';
+    // Welcome을 임포트해서 사용하기
 
     function App() {
       return (
         <div className="App">
-            **<Welcome />
+            <Welcome />
     				/**/Welcome 컴포넌트 사용하기
         </div>
       );
@@ -488,11 +491,11 @@ function Welcome({name,age}){ // object destructuring assignment
 - state 관련 기능 사용 가능
 - 코드 기본 틀
     ```jsx
-    **import React from 'react';**
+    import React from 'react';
     // 여기서는 Header 클래스가 React.Component를 상속하니까 임포트를 해야 함
 
-    class Header **extends React.Component**{
-    	**render()**{ //render() 메서드를 클래스 메서드로 포함해야 함
+    class Header extends React.Component{
+    	render(){ //render() 메서드를 클래스 메서드로 포함해야 함
     		return (
     			//JSX 반환부분
     			<div> Hello </div>
@@ -506,15 +509,15 @@ function Welcome({name,age}){ // object destructuring assignment
         ```jsx
         import React from 'react';
 
-        **const name = 'Sara';
-        class Welcome extends React.Component{**
+        const name = 'Sara';
+        class Welcome extends React.Component{
         	
-        	**render(){
-        		return(**
+        	render(){
+        		return(
         			<div>Welcome, {name}</div>
-        		**)
+        		)
         	}
-        }**
+        }
 
         export default Welcome;
         ```
@@ -549,10 +552,10 @@ function Welcome({name,age}){ // object destructuring assignment
 function HeaderTag(props){
 
   debugger;
-  **console.log('Header', props);**
+  console.log('Header', props);
 
-  **function onClickHandler(){
-    props.onChangeMode();** 
+  function onClickHandler(){
+    props.onChangeMode();
     // props의 onChangeMode 호출(불러오기)
     // function App()에서 onChangeMode는 onChangeModeHandler 함수를 호출하고 있다
     // function App()의 코드 : onChangeMode={onChangeModeHandler}
@@ -596,7 +599,7 @@ const poweredArray = arrayA.map(el => pow(el));
     ```
 - 함수의 입력인자가 하나이면 주변 괄호도 생략 가능
     ```jsx
-    const element = **array** => array.length;
+    const element = array => array.length;
     ```
 참고 : [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Arrow_functions](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
@@ -661,7 +664,7 @@ arrayA.forEach(el=>console.log(pow(el));
 
     // const [a, b, c, ...restList] = [10, 20, 30, 40, 50]
     // 어차피 안 쓸 변수에 메모리 할당을 하면 메모리 낭비니까 아래처럼 쓰자
-    const [, , , ...restList] = [10, 20, 30, 40, 50]**
+    const [, , , ...restList] = [10, 20, 30, 40, 50]
     console.log(restList)
     // output : [40, 50]
     ```
@@ -700,7 +703,7 @@ arrayA.forEach(el=>console.log(pow(el));
     // expected output : Object { a: '1', b: '2', c: '4'}
 
     let res = [1, 2, 3];
-    **res = [...res, 4];
+    res = [...res, 4];
     // expected output : [1, 2, 3, 4]**
 
     let obj = {
@@ -731,7 +734,7 @@ function onClickHandler(e){
 - 함수 컴포넌트에서 사용하기 - useState
     ```jsx
     function Car(){
-    	**const [favorite,setFavorite] = useState("ice cream");**
+    	const [favorite,setFavorite] = useState("ice cream");
 
     	return(
     		<div>
@@ -744,11 +747,11 @@ function onClickHandler(e){
 - 클래스 컴포넌트에서 사용하기 - constructor(props)
     ```jsx
     class Car extends React.Component{
-    	**constructor(props){
+    	constructor(props){
     		super(props);
     		this.state = {
     			favorite: "ice cream";
-    		}**
+    		}
     	}
 
     	render(){
@@ -771,9 +774,9 @@ function onClickHandler(e){
 ```jsx
 function App() {
 
-  **var [mode, setMode] = useState('WELCOME');
+  var [mode, setMode] = useState('WELCOME');
   // useState 함수에 전달한 'WELCOME'이라는 인자값은 mode의 디폴트값이 됨
-  console.log('mode', mode);**
+  console.log('mode', mode);
 
   var topics = [
     {id:1, title:'html', description:'html is . . .'},
@@ -782,13 +785,13 @@ function App() {
 
   function onChangeHeaderHandler(){
       console.log('Header!!!');
-      **setMode('WELCOME');**
+      setMode('WELCOME');
       // mode에 맞는 기능이 실행되도록 하고 싶다.
   }
 
   function onChangeNavHandler(){
       console.log('onChangeMode!!!');
-      **setMode('READ');**
+      setMode('READ');
       // mode에 맞는 기능이 실행되도록 하고 싶다.
   }
 
