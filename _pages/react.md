@@ -11,31 +11,6 @@ tags:
   - Frontend
 #date: 2021-07-31T00:00:00
 ---
-
-- 각종 에러 메시지와 해결방법
-    - DevTools failed to load source map: Could not load content for chrome-extension://pgjjikdiikihdfpoppgaidccahalehjh/webspeed.js.map: HTTP error: status code 404, net::ERR_UNKNOWN_URL_SCHEME (콘솔창에서 에러, 실행도 안 됨)
-        - index.js 가 비어있을 때 발생
-    - Each child in a list should have a unique "key" prop
-        - 목록을 for문으로 생성할 때(map등을 이용할 때) key라는 prop값을 부여해야 한다
-        - 키를 세팅하지 않으면 위의 에러가 난다
-        - key는 다른 것과 중복되지 않는 식별자를 써야 한다
-            - 다른 엘리먼트들과 다른 UNIQUE한 string값을 부여 (.toString()이용)
-            - 대부분 데이터의 id값을 key값으로 부여함
-            - index를 사용하는 경우도 있음
-                - 그러나 배열 내 아이템의 순서가 바뀔 수 있어서 좋지 않음
-                - 성능이 저하되거나 컴포넌트의 state와 관련한 문제가 발생할 수 있으므로
-                - id값을 쓰는 편이 나음
-    - 'userState' is not defined no-undef
-        - `import {useState} from 'react';` 추가해서 해결
-    - Module not found: Can't resolve '파일경로'
-        -  파일이 누락되었거나 파일 경로에 오타가 있을 경우 발생(점, 슬래시 등 체크)
-    - 컴포넌트의 입력인자에 숫자를 할당하려면?
-        ```jsx
-        <Profile name="AnSan" age="20" /> (o)
-        <Profile name="AnSan" age={20} /> (o)
-        <Profile name="AnSan" age=25 /> (x)
-        ```
-
 # 리액트란?
 - 페이스북에서 개발, 자바스크립트 라이브러리
 - 동적 유저 인터페이스(UI)를 구축할 때 용이
@@ -980,3 +955,27 @@ function addItem() {
 }
 
 ```
+
+- 각종 에러 메시지와 해결방법
+    - DevTools failed to load source map: Could not load content for chrome-extension://pgjjikdiikihdfpoppgaidccahalehjh/webspeed.js.map: HTTP error: status code 404, net::ERR_UNKNOWN_URL_SCHEME (콘솔창에서 에러, 실행도 안 됨)
+        - index.js 가 비어있을 때 발생
+    - Each child in a list should have a unique "key" prop
+        - 목록을 for문으로 생성할 때(map등을 이용할 때) key라는 prop값을 부여해야 한다
+        - 키를 세팅하지 않으면 위의 에러가 난다
+        - key는 다른 것과 중복되지 않는 식별자를 써야 한다
+            - 다른 엘리먼트들과 다른 UNIQUE한 string값을 부여 (.toString()이용)
+            - 대부분 데이터의 id값을 key값으로 부여함
+            - index를 사용하는 경우도 있음
+                - 그러나 배열 내 아이템의 순서가 바뀔 수 있어서 좋지 않음
+                - 성능이 저하되거나 컴포넌트의 state와 관련한 문제가 발생할 수 있으므로
+                - id값을 쓰는 편이 나음
+    - 'userState' is not defined no-undef
+        - `import {useState} from 'react';` 추가해서 해결
+    - Module not found: Can't resolve '파일경로'
+        -  파일이 누락되었거나 파일 경로에 오타가 있을 경우 발생(점, 슬래시 등 체크)
+    - 컴포넌트의 입력인자에 숫자를 할당하려면?
+        ```jsx
+        <Profile name="AnSan" age="20" /> (o)
+        <Profile name="AnSan" age={20} /> (o)
+        <Profile name="AnSan" age=25 /> (x)
+        ```
