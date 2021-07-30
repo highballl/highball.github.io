@@ -4,7 +4,9 @@ main:
   # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
    - title: "About"
      url: https://freckle-alarm-005.notion.site/Park-Ji-Yoon-e299798a563b47f6ab53078a363d1290
-   - title: "Category"
+   - title: "React"
+    url: "/"
+   - title: "Categories"
      url: /categories/
    - title: "Tag"
      url: /tags/
