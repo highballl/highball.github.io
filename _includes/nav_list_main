@@ -1,5 +1,5 @@
 <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
-
+ 
 {% assign sum = site.posts | size %}
 
 <nav class="nav__list">
@@ -54,6 +54,36 @@
                 {% for category in site.categories %}
                     {% if category[0] == "algorithm" %}
                         <li><a href="/categories/algorithm" class="">Algorithm ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">Language</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "English" %}
+                        <li><a href="/categories/english" class="">English ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Japanese" %}
+                        <li><a href="/categories/japanese" class="">Japanese ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">Audio-Visual</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "audio-visual" %}
+                        <li><a href="/categories/audio-visual" class="">Audio-Visual ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "electronic-music" %}
+                        <li><a href="/categories/electronic-music" class="">Electronic Music ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

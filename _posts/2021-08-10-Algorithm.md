@@ -12,6 +12,8 @@ tags:
 toc: true
 ---
 
+`last update: 2021.08.10.Tue` 
+
 # Algorithm / 알고리즘
 <br /><br />
 
