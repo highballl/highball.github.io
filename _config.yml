@@ -61,7 +61,7 @@ atom_feed:
   hide                   : # true, false (default)
 search                   : "true" # true, false (default)
 search_full_content      : "true" # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          : google # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -69,7 +69,7 @@ algolia:
   powered_by             : # true (default), false
 google:
   search_engine_id       : 1778f197e2ca2e00a # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
+  instant_search         : true # fault (default), true
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -93,7 +93,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "G-CB2JV2RV5D"
     anonymize_ip         : false # true, false (default)
