@@ -25,10 +25,10 @@ toc: true
 
 ### Audio-Visual Learning Experiences and Resources
 * 2013-2014.  
-Interactive Programming and other courses - [syllabus](http://art.snu.ac.kr/category/program-in-media-art/?cate=&catemenu=Courses&type=major)
+Interactive Programming and other courses - [syllabus](http://art.snu.ac.kr/category/program-in-media-art/?cate=&catemenu=Courses&type=major)  
 * 2021.  
-    1) Integrating MAX with Other Software and Languages by [Kadenze](https://www.kadenze.com/courses/programming-max-structuring-interactive-software-for-digital-arts)  
-    2) Introduction to Live-Video Using Jitter by [Sabina Covarrubias](https://www.sabinacovarrubias.com/)
+1) Integrating MAX with Other Software and Languages by [Kadenze](https://www.kadenze.com/courses/programming-max-structuring-interactive-software-for-digital-arts)  
+2) Introduction to Live-Video Using Jitter by [Sabina Covarrubias](https://www.sabinacovarrubias.com/)
 
 
 
