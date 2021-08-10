@@ -11,28 +11,25 @@ tags:
 toc: true
 ---
 
+`last update: 2021.08.10.Tue` 
 # Javascript
 
 * 동기
 
 * 비동기
 
-* 스레드
-    * 싱글 스레드
 
-    * 메인 스레드
+* 싱글 스레드
 
-* 큐
-    * 이벤트 큐
-    * task queue
+* 메인 스레드
 
-* 스택
-    * call stack
 
-* 함수
-    * callback 함수
+* 이벤트 큐
+* task queue
 
-* 이벤트
+* call stack
+
+* callback 함수
 
 
 * promise

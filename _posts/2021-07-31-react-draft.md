@@ -12,6 +12,8 @@ tags:
 #date: 2021-07-31T00:00:00
 toc: true
 ---
+`last update: 2021.07.31.SAT` 
+
 # 리액트란?
 - 페이스북에서 개발, 자바스크립트 라이브러리
 - 동적 유저 인터페이스(UI)를 구축할 때 용이
@@ -22,10 +24,12 @@ toc: true
 - **`Hooks`**를 이용하여 컴포넌트를 쉽게 관리
 - 오픈소스
 - 데이터는 부모→자식 단방향으로만 전달(props 이용)
-
+<br />
+<br />
+<br />
 ## 리액트 초기 세팅
 (정리중)
-
+<br /><br /><br />
 ## 리액트 설치 직후 초기 파일 살펴보기
 ### index.html
 - 리액트로 만든 앱은 아무리 커도 이 root 태그 안에 들어가기로 약속한다.
@@ -68,7 +72,7 @@ toc: true
     : index.html의 <div id='root'>에서 코드가 실행됨
 
 ### 기타 파일 구조
-(정리중)
+(정리중)<br /><br /><br />
 
 ## 핫 리로딩
 출처 : [https://reactnative.dev/blog/2016/03/24/introducing-hot-reloading](https://reactnative.dev/blog/2016/03/24/introducing-hot-reloading)
@@ -80,7 +84,7 @@ React-Native 앱을 개발하는 동안 코드 변경 사항을보고 코드 변
     때로는 탐색과 같은 코드를 테스트하기 위해 Live Reload가 필요할 수 있으므로 Live reload는 이 경우 유용하므로 코드 변경시 전체 응용 프로그램을 다시로드합니다.
 참고 : [http://daplus.net/javascript-react-native의-핫-리로딩과-라이브-리로딩의-차이점/](http://daplus.net/javascript-react-native%EC%9D%98-%ED%95%AB-%EB%A6%AC%EB%A1%9C%EB%94%A9%EA%B3%BC-%EB%9D%BC%EC%9D%B4%EB%B8%8C-%EB%A6%AC%EB%A1%9C%EB%94%A9%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4/)
 
-
+<br /><br /><br /><br />
 
 # JSX
 - **`React.createElement()`**
@@ -147,7 +151,7 @@ React-Native 앱을 개발하는 동안 코드 변경 사항을보고 코드 변
 
     ```javascript
     // variable
-    const name = "AnSan";
+    const name = "JYP";
     const element = <h1> Hi, {name}</h1>;
 
     // function
@@ -172,7 +176,7 @@ React-Native 앱을 개발하는 동안 코드 변경 사항을보고 코드 변
     const element = article(book);
     ReactDOM.render(element, document.getElementById('root')); 
     ```
-
+<br /><br />
 
 ## 주의사항
 - HTML을 JSX로 변환할 때, 변수 내에 HTML코드를 저장하기
@@ -209,6 +213,7 @@ React-Native 앱을 개발하는 동안 코드 변경 사항을보고 코드 변
 
     export default App;
     ```
+<br />
 
 ### 객체(Object)
 - 데이터를 모아 묶은 것
@@ -216,7 +221,7 @@ React-Native 앱을 개발하는 동안 코드 변경 사항을보고 코드 변
 - 파이썬의 딕셔너리와 비슷하다고 이해
 - 배열에는 데이터가 순서대로 담기지만, 객체는 데이터가 이름을 갖고 저장됨
 
-
+<br /><br />
 
 <br>
 <br>
@@ -304,9 +309,12 @@ export default App;
     );
   }
   ```
-
+<br />
 - {props}, {props.title}, {props.description} 과 같은 컴포넌트가 만들어짐
 - 사용자 정의 태그로 사용하고 있음
+<br />
+<br />
+
   
   ```jsx
   import logo from './logo.svg';
@@ -356,6 +364,7 @@ export default App;
 
   export default App;
   ```
+<br /><br />
 
 ### 속성(props)을 통해 컴포넌트에서 컴포넌트로 입력값 전달하기(2)
 - props는 JSX attribute를 단일 object의 형태로 컴포넌트에 전달
@@ -399,6 +408,7 @@ export default App;
     return <div>Hello my name is {name}, I'm {age} years old!</div>;
   }
   ```
+<br /><br />
 
 ## 함수 컴포넌트(Function Component)
 - JSX를 return
@@ -417,6 +427,8 @@ export default App;
     )
   }
   ```
+
+<br />
 
 - 함수 컴포넌트 정의 방법
   1) 컴포넌트 정의(대문자로 시작할 것)
@@ -476,6 +488,8 @@ export default App;
     // index.js를 보면 거기서 쓰고 있다(렌더링하고 있음)
     ```
 
+
+<br /><br /><br />
 ## 클래스 컴포넌트(Class Component)
 공식문서 : [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes)
 - state 관련 기능 사용 가능
@@ -531,6 +545,7 @@ export default App;
         ```
 <br>
 <br>
+<br />
 
 # 문법
 ### 몇가지 유용한 내장 메서드
@@ -566,9 +581,13 @@ function HeaderTag(props){
 }
 ```
 
+<br />
+
 ### this
 - 자기 자신의 상위 객체를 의미
 - 화살표 함수(Arrow Function)에서는 this를 사용할 수 없음
+
+<br />
 
 ### 화살표 함수(Arrow Function)
 
@@ -603,6 +622,7 @@ const poweredArray = arrayA.map(el => pow(el));
 
 참고 : [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Arrow_functions](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
+<br />
 
 ### map(내장함수)
 
@@ -618,6 +638,9 @@ function NavTag(props){
   )
 }
 ```
+
+
+<br />
 
 ### forEach
 - 배열의 메서드
@@ -636,6 +659,8 @@ const pow = a*a;
 arrayA.forEach(el=>console.log(pow(el));
 //el = elements, e도 되고 el도 되고 element도 되고...
 ```
+
+<br /><br />
 
 ### 구조분해할당(Destructuring)
 (정리중)
@@ -671,6 +696,8 @@ arrayA.forEach(el=>console.log(pow(el));
     console.log(restList)
     // output : [40, 50]
     ```
+
+<br />
 
 - 전개 표기법(Spread Expression)
     - 원소 나열할 때 사용
@@ -721,6 +748,9 @@ arrayA.forEach(el=>console.log(pow(el));
     // expected output : {a: "4", b: "2", c: "3", test: "test"}
     ```
 
+
+<br /><br />
+
 ### Prevent Default Behavior
 - 리액트는 SPA(Single Page Application?), 따라서 a태그의 기본 동작인 페이지 이동을 막는 편
 - 그 때 사용하는 코드 : `functionparameter.preventDefault();`
@@ -732,6 +762,8 @@ function onClickHandler(e){
 }
 ```
 
+
+<br /><br />
 ### State
 
 - input의 데이터를 state를 이용해서 관리 → Controlled component
@@ -771,12 +803,14 @@ function onClickHandler(e){
     }
     ```
 
-- 예제
-    ⇒ HeaderTag 부분의 I love WEB 을 누르면 
-    ⇒ setState가 'WELCOME'이 되고
-    ⇒ if 문에 따라 mode === 'WELCOME'이면
-    ⇒  title, desc가 바뀌게 되고
-    ⇒  <ArticleTag title={title} description={desc}/> 부분에 자동 적용되어
+<br />
+
+- 예제  
+    ⇒ HeaderTag 부분의 I love WEB 을 누르면  
+    ⇒ setState가 'WELCOME'이 되고  
+    ⇒ if 문에 따라 mode === 'WELCOME'이면  
+    ⇒  title, desc가 바뀌게 되고  
+    ⇒  <ArticleTag title={title} description={desc}/> 부분에 자동 적용되어  
     ⇒ 화면에 보이는 내용이 바뀐다
 
 ```jsx
@@ -825,11 +859,11 @@ function App() {
 
 export default App;
 ```
-
+<br />
 
 ### setState()
-- 특정 이벤트(클릭, 마우스오버 등)로 상태가 변하는 비동기적 변경
-- 클래스 컴포넌트에서 constructor 부분에서 State가 초기화 됨
+- 특정 이벤트(클릭, 마우스오버 등)로 상태가 변하는 비동기적 변경  
+- 클래스 컴포넌트에서 constructor 부분에서 State가 초기화 됨  
 - 코드 틀
 
     ```jsx
@@ -854,6 +888,7 @@ export default App;
     ```
 
 
+<br /><br /><br /><br />
 
 # 이벤트
 ## 바인딩
@@ -918,7 +953,7 @@ class EventClass extends React.Component {
 }
 
 ```
-
+<br /><br /><br />
 
 ## 조건부 렌더링
 - `조건 ? expr1 : expr 2`
@@ -926,7 +961,7 @@ class EventClass extends React.Component {
     조건이 false인 경우 → expr 2 실행
 - 
 
-
+<br /><br /><br /><br />
 
 # 기타 예제 코드
 - 이 함수를 통해, items state에 데이터를 추가하면 별도의 DOM 조작없이 화면에 추가 된 요소가 렌더링 됩니다.
@@ -955,9 +990,13 @@ function GroceryList(props) {
 };
 ```
 
+<br />
+
 - React는 사용자의 입력을 기반으로 자신의 상태를 관리하고 업데이트 하는 제어 컴포넌트를 이용해 사용자 입력 시 자바스크립트 객체의 텍스트 값을 설정
 - 이를 위해 먼저 상태를 정의해야 함
-- 입력이 변경될 때마다 설정이 되어야 하여 HTML코드는 다소 복잡
+- 입력이 변경될 때마다 설정이 되어야 하여 HTML코드는 다소 복잡  
+<br />
+
 
 ```jsx
 const [itemInput, setItemInput] = useState("");
@@ -965,6 +1004,8 @@ const [itemInput, setItemInput] = useState("");
 <input type="text" placeholder="Enter an item" value={itemInput} onChange={e => setItemInput(e.target.value)}
 
 ```
+<br />
+
 
 - React로 업데이트하기 - 새로운 목록 추가하기
     - React 앱은 자바스크립트 변수의 전체 상태를 유지
@@ -973,6 +1014,9 @@ const [itemInput, setItemInput] = useState("");
     - **`setItems`** 함수를 사용하여 기존 항목에 새 항목을 추가
 
     ⇒ 목록이 변경되었음을 자동으로 등록하고 UI를 자동으로 업데이트!
+
+    <br />
+
 
 ```jsx
 const [items, setItems] = useState(["Milk", "Bread", "Eggs"]);
@@ -992,6 +1036,8 @@ function addItem() {
 
 ```
 
+<br /><br />
+
 - 각종 에러 메시지와 해결방법
     - DevTools failed to load source map: Could not load content for chrome-extension://pgjjikdiikihdfpoppgaidccahalehjh/webspeed.js.map: HTTP error: status code 404, net::ERR_UNKNOWN_URL_SCHEME (콘솔창에서 에러, 실행도 안 됨)
         - index.js 가 비어있을 때 발생
@@ -1010,9 +1056,8 @@ function addItem() {
     - Module not found: Can't resolve '파일경로'
         -  파일이 누락되었거나 파일 경로에 오타가 있을 경우 발생(점, 슬래시 등 체크)
     - 컴포넌트의 입력인자에 숫자를 할당하려면?
-
         ```jsx
-        <Profile name="AnSan" age="20" /> (o)
-        <Profile name="AnSan" age={20} /> (o)
-        <Profile name="AnSan" age=25 /> (x)
+        <Profile name="JYP" age="20" /> (o)
+        <Profile name="JYP" age={20} /> (o)
+        <Profile name="JYP" age=25 /> (x)
         ```

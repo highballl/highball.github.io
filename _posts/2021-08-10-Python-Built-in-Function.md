@@ -10,6 +10,7 @@ tags:
 toc: true
 ---
 
+`last update: 2021.08.10.Tue` 
 # Python Built in Function / 파이썬 내장 함수
 
 * import sys
