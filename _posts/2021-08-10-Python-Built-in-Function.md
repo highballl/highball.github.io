@@ -1,11 +1,11 @@
 ---
 title: "Python Built in Function"
 layout: posts
-permalink: /categories/python/
+permalink: categories/:categories/:title
 categories:
-  - python
-tags:
   - Python
+tags:
+  - 파이썬 내장 함수
 #date: 2021-08-01T00:00:00
 toc: true
 ---

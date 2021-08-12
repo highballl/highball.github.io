@@ -1,9 +1,9 @@
 ---
 title: "English for Developers"
 layout: posts
-permalink: /categories/english/
+permalink: /categories/:categories/:title
 categories:
-  - english
+  - English
 tags:
   - programming
   - general

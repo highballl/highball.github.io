@@ -1,9 +1,9 @@
 ---
 title: "Javascript"
 layout: posts
-permalink: /categories/javascript/
+permalink: /categories/:categories/:title
 categories:
-  - javascript
+  - Javascript
 tags:
   - JavaScript
   - Frontend

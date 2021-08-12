@@ -1,9 +1,9 @@
 ---
 title: "Electronic Music and Sounds Basic"
 layout: posts
-permalink: /categories/electronic-music/
+permalink: /categories/:categories/:title
 categories:
-  - electronic-music
+  - Electronic-Music
 tags:
   - Music
   - Ableton Live

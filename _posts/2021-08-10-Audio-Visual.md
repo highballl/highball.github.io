@@ -1,9 +1,9 @@
 ---
 title: "Audio Visual Basic"
 layout: posts
-permalink: /categories/audio-visual/
+permalink: /categories/:categories/:title
 categories:
-  - audio-visual
+  - Audio-Visual
 tags:
   - Music
   - Audio-Visual

@@ -18,7 +18,7 @@
                 <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
-                    {% if category[0] == "blog" %}
+                    {% if category[0] == "Blog" %}
                         <li><a href="/categories/blog" class="">Blog ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
@@ -30,14 +30,14 @@
                 <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
-                    {% if category[0] == "react" %}
+                    {% if category[0] == "React" %}
                         <li><a href="/categories/react" class="">React ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "javascript" %}
+                    {% if category[0] == "Javascript" %}
                         <li><a href="/categories/javascript" class="">JavaScript ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
@@ -45,14 +45,14 @@
         <span class="nav__sub-title">Python</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "python" %}
+                    {% if category[0] == "Python" %}
                         <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "algorithm" %}
+                    {% if category[0] == "Algorithm" %}
                         <li><a href="/categories/algorithm" class="">Algorithm ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
@@ -75,14 +75,14 @@
         <span class="nav__sub-title">Audio-Visual</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "audio-visual" %}
+                    {% if category[0] == "Audio-Visual" %}
                         <li><a href="/categories/audio-visual" class="">Audio-Visual ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "electronic-music" %}
+                    {% if category[0] == "Electronic-Music" %}
                         <li><a href="/categories/electronic-music" class="">Electronic Music ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}

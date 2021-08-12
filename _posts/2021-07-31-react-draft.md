@@ -1,9 +1,9 @@
 ---
-title: "React"
+title: "React 기초 정리"
 layout: posts
-permalink: /categories/react/
+permalink: /categories/:categories/:title
 categories:
-  - react
+  - React
 tags:
   - React
   - JavaScript
@@ -187,13 +187,13 @@ React-Native 앱을 개발하는 동안 코드 변경 사항을보고 코드 변
 - 닫는 태그를 필수로 작성해야 함
 - class대신 className 사용
 - 인라인 스타일 정의
-    참고 : [w3schools-react_css](https://www.w3schools.com/react/react_css.asp)
-    : CSS 속성명은 camel case로 작성
-    : "color: red;" (x) - 문자열 안됨!
-    : 세미콜론 대신 콤마를 사용할 것
-    : { { } } (o) 
-    → 바깥쪽 중괄호는 HTML태그 내에서 자바스크립트를 사용하겠다는 선언에 해당
-    → 안쪽 중괄호가 내용을 담은 **객체**에 해당
+    참고 : [w3schools-react_css](https://www.w3schools.com/react/react_css.asp)  
+    : CSS 속성명은 camel case로 작성  
+    : "color: red;" (x) - 문자열 안됨!  
+    : 세미콜론 대신 콤마를 사용할 것  
+    : { { } } (o)   
+    → 바깥쪽 중괄호는 HTML태그 내에서 자바스크립트를 사용하겠다는 선언에 해당  
+    → 안쪽 중괄호가 내용을 담은 **객체**에 해당  
     
     ```javascript
     import React from 'react';
@@ -205,7 +205,7 @@ React-Native 앱을 개발하는 동안 코드 변경 사항을보고 코드 변
             <div style={{
                 padding: 48, 
                 color:"red",
-                backgroundColor:"blue"
+                backgroundColor:"blue",
             }}>안녕하세요.</div>
         </div>
       );
