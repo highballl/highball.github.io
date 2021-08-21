@@ -1,5 +1,5 @@
 ---
-title: "함께해서 더러웠고"
+title: "함께해서 더러웠고 - 리액트 첫 프로젝트에서 만난 에러모음(1)"
 layout: posts
 permalink: /categories/:categories/:title
 categories:
