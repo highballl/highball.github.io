@@ -1,5 +1,5 @@
 ---
-title: "fibonacci func"
+title: "피보나치 함수"
 layout: posts
 permalink: categories/:categories/:title
 categories:
