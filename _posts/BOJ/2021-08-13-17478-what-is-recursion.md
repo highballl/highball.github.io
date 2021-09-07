@@ -20,9 +20,6 @@ Memory 29200KB, Time 76ms
 
 
 
-
-
-
 ```python
 n = int(input())
 r = n
